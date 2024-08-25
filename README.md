@@ -37,7 +37,13 @@ conda activate bike_share
 ```
 
 3. Install dependencies:
-`pip install -r requirements.txt`
+```
+pip install -U pip
+pip install -U setuptools wheel
+pip install torch==2.3.1 torchvision==0.18.1 --index-url https://download.pytorch.org/whl/cpu
+pip install autogluon
+pip install jupyter lab
+```
 
 4. Run the Jupyter notebook:
 `jupyter lab` and then choose the project notebook.
